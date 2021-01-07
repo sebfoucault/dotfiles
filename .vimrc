@@ -1,3 +1,13 @@
+" ===================================================================
+" Install plugins
+" ===================================================================
+call plug#begin()
+Plug 'preservim/NERDTree'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+call plug#end()
+
+
 " listchars:        Defines how special chars shall be translated in list mode
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 
@@ -60,14 +70,6 @@ set undodir=~/.vim.undo/
 
 " Display row and col number
 set ruler
-
-
-" ===================================================================
-" Configure CtrlP 
-" ===================================================================
-
-" to work with large number of files
-let g:ctrlp_max_files=0
 
 " ===================================================================
 " Configure airline
