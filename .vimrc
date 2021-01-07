@@ -5,8 +5,9 @@ call plug#begin()
 Plug 'preservim/NERDTree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'pgavlin/pulumi.vim'
+Plug 'jremmen/vim-ripgrep'
 call plug#end()
-
 
 " listchars:        Defines how special chars shall be translated in list mode
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
@@ -64,9 +65,13 @@ set encoding=utf-8
 " ===================================================================
 " Change location of temporary files
 " ===================================================================
-set backupdir=~/.vim.backup/
-set directory=~/.vim.swp/
-set undodir=~/.vim.undo/
+silent !mkdir ~/.vim_backup > /dev/null 2>&1
+silent !mkdir ~/.vim_swp > /dev/null 2>&1
+silent !mkdir ~/.vim_undo > /dev/null 2>&1
+
+set backupdir=~/.vim_backup/
+set directory=~/.vim_swp/
+set undodir=~/.vim_undo/
 
 " Display row and col number
 set ruler
