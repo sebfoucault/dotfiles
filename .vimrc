@@ -1,5 +1,5 @@
 " ===================================================================
-" Install plugins
+" Install plugins (depends on plugin manager vim-plug)
 " ===================================================================
 call plug#begin()
 Plug 'preservim/NERDTree'
