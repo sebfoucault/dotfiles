@@ -65,9 +65,9 @@ set encoding=utf-8
 " ===================================================================
 " Change location of temporary files
 " ===================================================================
-silent !mkdir ~/.vim_backup > /dev/null 2>&1
-silent !mkdir ~/.vim_swp > /dev/null 2>&1
-silent !mkdir ~/.vim_undo > /dev/null 2>&1
+call mkdir($HOME . "/.vim_backup", "p")  
+call mkdir($HOME . "/.vim_swp", "p")  
+call mkdir($HOME . "/.vim_undo", "p")  
 
 set backupdir=~/.vim_backup/
 set directory=~/.vim_swp/
