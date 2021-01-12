@@ -1,5 +1,7 @@
 " ===================================================================
 " Install plugins (depends on plugin manager vim-plug)
+" - Handles plugins
+" - Handle color-schemes
 " ===================================================================
 call plug#begin()
 Plug 'preservim/NERDTree'
@@ -80,12 +82,12 @@ set ruler
 " Configure airline
 " ===================================================================
 let g:airline_powerline_fonts = 1
-let g:airline_theme='molokai'
+let g:airline_theme='powerlineish'
 
 " ===================================================================
 " Configure NERDTree
 " ===================================================================
-"let NERDTreeShowHidden=1
-"autocmd VimEnter * NERDTree
-
+let NERDTreeShowHidden=1
+autocmd VimEnter * NERDTree
+nmap <F6> :NERDTreeToggle<CR>
 
